@@ -1,0 +1,317 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+    margin: 0;
+    padding: 0px;
+    line-height: 1.6;
+    background-image: url('/IMG/fondo2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+.body2 {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    
+}
+
+
+.contenedor {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 90%;
+    max-width: 1200px;
+    margin: 80px auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    min-height: 300px;
+}
+
+h1 {
+    text-align: left;
+    color: #333;
+    font-size: 1.5rem;
+    margin-bottom: 50px;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: 80%;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.textarea-div {
+    grid-column: span 2; 
+}
+.catsub{
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    gap: 10px; 
+    width: 100%; 
+}
+
+.catsub > div {
+    display: flex;
+    flex-direction: column; 
+}
+
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+input, select, textarea {
+    width: 97%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-top: 5px;
+    
+}
+
+input[type="file"] {
+    padding: 5px;
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.grupo-checks{
+    display: flex;
+    gap: 10px; 
+    margin: 10px;
+}
+
+.grupo-checks label {
+    display: flex;
+    align-items: center; 
+    gap: 5px; 
+}
+
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+button[type="reset"] {
+    background-color: #6c757d;
+    color: #fff;
+}
+
+button[type="reset"]:hover {
+    background-color: #5a6268;
+}
+
+footer {
+    background-color: #05113b;
+    color: #fff;
+    text-align: center;
+    padding: 1px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: auto;
+}
+
+@media (max-width: 480px) {
+
+    
+    
+    .body2 {
+        
+        align-items: flex-start;
+        min-height: 100vh;
+        flex-direction: column;
+    }
+    
+    .contenedor {
+        
+        width: 47%;
+        max-width: 600px;
+        margin: 80px 10px;
+        
+    }
+    
+    h1 {
+        margin-bottom: 20px;
+    }
+    
+    form {
+        width: 100%;
+    }
+    
+    .grid-container {
+        display: flex;
+        flex-direction: column;
+        
+        width: 100%;
+    }
+    
+    
+    .textarea-div {
+        width: 100%;
+    }
+    
+    .catsub {
+        display: flex;
+        flex-direction: column;
+        
+    }
+    
+    
+    
+    input, select, textarea {
+        width: 95%;
+        border: 1px solid #ccc;
+        
+    }
+    
+    
+    
+    
+    .button-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+    
+   
+    
+
+    footer{
+        position: fixed !important;
+        padding-top: 2px;
+        padding-bottom: 10px;
+        margin-bottom: 0 !important;
+        line-height: 0.9 !important;
+    }
+    
+    footer p{
+        gap: 10px  ;
+    }
+}
+
+
+
+@media (max-width: 880px) {
+
+
+    
+    .body2 {
+        
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    
+    .contenedor {
+        
+        width: 85%;
+        max-width: 600px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    h1 {
+        
+        margin-bottom: 20px;
+    }
+    
+    form {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .grid-container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+    }
+    
+    
+    .textarea-div {
+        width: 100%;
+    }
+    
+    .catsub {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
+   
+    
+    
+    input, select, textarea {
+        width: 95%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 14px;
+        margin-top: 5px;
+    }
+    
+   
+    
+    .button-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    
+    button {
+        margin-bottom: 10px;
+    }
+
+    
+}

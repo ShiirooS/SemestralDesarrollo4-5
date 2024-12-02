@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Actividad</title>
+    <link rel="stylesheet" href="/CSS/inicioAdmi.css">
+    <link rel="stylesheet" href="CSS/crearActividad.css">
+</head>
+<body>
+    <header>
+        <div class="logo"> 
+             <img src="/IMG/logo-utp.png" alt="Logo del sitio"> 
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/indexAdministrativo.html">Inicio</a></li>
+                <li><a href="verPropuestas.html">Ver Propuesta</a></li>
+            </ul>
+        </nav>
+        <button id="logoutButton">Cerrar Sesión</button>
+    </header>
+    <main>
+        <div class="body2">
+            <div class="contenedor">
+                <h1>Agregar Actividad</h1>
+                <form id="formPropuesta">
+                    <div class="grid-container">
+                        <div>
+                            <label for="nombreActividad">Nombre de la actividad*</label>
+                            <input type="text" id="nombreActividad" placeholder="Nombre" required>
+                        </div>
+                        <div class="catsub">
+                            <div>
+                                <label for="categoria">Categoría*</label>
+                                <select id="categoria" required>
+                                    <option value="">Categorías</option>
+                                </select>
+                            </div>
+    
+                            <div>
+                                <label for="subcategoria">Subcategoría*</label>
+                                <select id="subcategoria" required>
+                                    <option value="">Subcategoría</option>
+                                </select>
+                            </div>
+                            
+                        </div>
+                        
+                        <div class="textarea-div">
+                            <label for="descripcion">Descripción</label>
+                            <textarea id="descripcion" placeholder="Escribe aquí..."></textarea>
+                        </div>
+                        
+                        <div>
+                            <label for="fecha">Fecha*</label>
+                            <input type="date" id="fecha" required>
+                        </div>
+                        <div>
+                            <label for="hora">Hora*</label>
+                            <input type="time" id="hora" step="1" required>
+                        </div>
+                        <div>
+                            <label for="lugar">Lugar*</label>
+                            <input type="text" id="lugar" required>
+                        </div>
+                        <div>
+                            <label for="limiteCupos">Límite de cupos*</label>
+                            <input type="number" id="limiteCupos" min="1" required>
+                        </div>
+                        <div>
+                            <label for="requisitos">Requisitos*</label>
+                            <textarea id="requisitos" placeholder="Escribe aquí..." required></textarea>
+                        </div>
+                        <div>
+                            <label for="imagenUrl">Imagen URL</label>
+                            <input type="url" id="imagenUrl">
+                        </div>
+                        <div>
+                            <label for="precio">Precio (opcional)</label>
+                            <input type="number" id="precio" step="0.01">
+                        </div>
+                    </div>
+                    <div class="button-container">
+                        <button type="reset">Limpiar</button>
+                        <button type="submit">Registrar Propuesta</button>
+                    </div>
+                </form>
+            </div>
+    
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Gestor de Actividades. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    
+    <script src="/JS/crearActividad.js"></script>
+    <script src="/JS/login.js"></script>
+</body>
+</html>

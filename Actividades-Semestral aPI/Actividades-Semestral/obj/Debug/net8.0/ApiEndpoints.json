@@ -1,0 +1,494 @@
+[
+  {
+    "ContainingType": "Actividades_Semestral.Controllers.ActividController",
+    "Method": "GetAll",
+    "RelativePath": "api/Activid",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Actividades_Semestral.Controllers.ActividController",
+    "Method": "GetDetails",
+    "RelativePath": "api/Activid/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Actividades_Semestral.Controllers.ActividController",
+    "Method": "Edit",
+    "RelativePath": "api/Activid/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "actividade",
+        "Type": "Actividades_Semestral.Models.Actividade",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Actividades_Semestral.Controllers.ActividController",
+    "Method": "Delete",
+    "RelativePath": "api/Activid/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Actividades_Semestral.Controllers.ActividController",
+    "Method": "ObtenerActividadConUsuarios",
+    "RelativePath": "api/Activid/{id}/detalles-completos",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Actividades_Semestral.Controllers.ActividController",
+    "Method": "GetActividadesCompletas",
+    "RelativePath": "api/Activid/actividades-completas",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Actividades_Semestral.Controllers.ActividController",
+    "Method": "GetByCategoria",
+    "RelativePath": "api/Activid/categoria/{idCategoria}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idCategoria",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Actividades_Semestral.Controllers.ActividController",
+    "Method": "Create",
+    "RelativePath": "api/Activid/crear",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "actividade",
+        "Type": "Actividades_Semestral.Models.Actividade",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Actividades_Semestral.Controllers.ActividController",
+    "Method": "ObtenerEstadosActividades",
+    "RelativePath": "api/Activid/estados-actividades",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Actividades_Semestral.Controllers.ActividController",
+    "Method": "GetBySubcategoria",
+    "RelativePath": "api/Activid/subcategoria/{idSubcategoria}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idSubcategoria",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Actividades_Semestral.Controllers.CategoriasController",
+    "Method": "GetCategorias",
+    "RelativePath": "api/Categorias",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[Actividades_Semestral.Models.Categoria, Actividades-Semestral, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Actividades_Semestral.Controllers.CategoriasController",
+    "Method": "GetSubcategoriasByCategoriaId",
+    "RelativePath": "api/Categorias/{id}/subcategorias",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[Actividades_Semestral.Models.Subcategoria, Actividades-Semestral, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Actividades_Semestral.Controllers.CategoriasController",
+    "Method": "GetCategoriaByNombre",
+    "RelativePath": "api/Categorias/nombre/{nombreCategoria}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "nombreCategoria",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Actividades_Semestral.Models.Categoria",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Actividades_Semestral.Controllers.EstadisticasController",
+    "Method": "GetEstadisticas",
+    "RelativePath": "api/Estadisticas/estadisticas",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idUsuario",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Actividades_Semestral.Controllers.EstadoActividadController",
+    "Method": "GetEstados",
+    "RelativePath": "api/EstadoActividad",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Actividades_Semestral.Controllers.EstadoActividadController",
+    "Method": "GetByEstado",
+    "RelativePath": "api/EstadoActividad/estado/{idEstado}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idEstado",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Actividades_Semestral.Controllers.InscripcionesController",
+    "Method": "CancelarInscripcion",
+    "RelativePath": "api/Inscripciones/cancelar",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Actividades_Semestral.Models.SolicitarInscripcion",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Actividades_Semestral.Controllers.InscripcionesController",
+    "Method": "VerificarEstado",
+    "RelativePath": "api/Inscripciones/estado",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idActividad",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "correo",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Actividades_Semestral.Controllers.InscripcionesController",
+    "Method": "RegistrarActividad",
+    "RelativePath": "api/Inscripciones/registrar",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Actividades_Semestral.Models.SolicitarInscripcion",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Actividades_Semestral.Controllers.PropuestasActividadesController",
+    "Method": "ObtenerTodo",
+    "RelativePath": "api/PropuestasActividades",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Actividades_Semestral.Controllers.PropuestasActividadesController",
+    "Method": "Crear",
+    "RelativePath": "api/PropuestasActividades",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "propuesta",
+        "Type": "Actividades_Semestral.Models.PropuestasActividade",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Actividades_Semestral.Controllers.PropuestasActividadesController",
+    "Method": "ObtenerDetalles",
+    "RelativePath": "api/PropuestasActividades/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Actividades_Semestral.Controllers.PropuestasActividadesController",
+    "Method": "AprobarPropuesta",
+    "RelativePath": "api/PropuestasActividades/{id}/aprobar",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Actividades_Semestral.Controllers.PropuestasActividadesController",
+    "Method": "ObtenerPropuestaDetallesCompletos",
+    "RelativePath": "api/PropuestasActividades/{id}/detalles-completos",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Actividades_Semestral.Controllers.PropuestasActividadesController",
+    "Method": "RechazarPropuesta",
+    "RelativePath": "api/PropuestasActividades/{id}/rechazar",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "comentarioRechazo",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Actividades_Semestral.Controllers.PropuestasActividadesController",
+    "Method": "GetPropuestasCompletas",
+    "RelativePath": "api/PropuestasActividades/propuestas-completas",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Actividades_Semestral.Controllers.RegistroActividadesController",
+    "Method": "ObtenerHistorial",
+    "RelativePath": "api/RegistroActividades",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "estado",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "idUsuario",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Actividades_Semestral.Controllers.RegistroActividadesController",
+    "Method": "ObtenerActividadPorId",
+    "RelativePath": "api/RegistroActividades/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Actividades_Semestral.Controllers.RolesController",
+    "Method": "GetRoles",
+    "RelativePath": "api/Roles",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[Actividades_Semestral.Models.Role, Actividades-Semestral, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Actividades_Semestral.Controllers.RolesController",
+    "Method": "ValidarLogin",
+    "RelativePath": "api/Roles/validar-login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "loginRequest",
+        "Type": "Actividades_Semestral.Models.LoginRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

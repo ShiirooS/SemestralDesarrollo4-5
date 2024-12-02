@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/navbar.css">
+    <link rel="stylesheet" href="/CSS/registro.css">
+
+    <title>Registro de Actividades</title>
+</head>
+<body>
+
+    <header>
+        <div class="logo"> 
+             <img src="/IMG/logo.png" alt="Logo del sitio"> 
+        </div>
+        <div class="navbar">
+            <nav>
+                <ul>
+                    <li><a href="/indexEstudiante.html">Inicio</a></li>
+                    <li><a href="/actividades.html">Actividades</a></li>
+                    <li><a href="registro.html">Registro de Actividades</a></li>
+                    <li><a href="propuesta.html">Actividades Propuestas</a></li>
+                    <button id="logoutButton">Cerrar Sesión</button>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+    <div class="contenedor-reg">
+        <h1>Registro por Actividad</h1>
+    
+       
+        <label for="filtro-estado">Filtrar actividades</label>
+        <select id="filtro-estado">
+            <option value="todas">Todas</option>
+            <option value="propuestas">Propuestas</option>
+            <option value="inscritas">Inscritas</option>
+        </select>
+
+    </div>
+
+    <div class="contenedor-contenedoractividades">
+        <div id="contenedor-actividades">Cargando actividades...</div>
+    </div>
+    
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Gestor de Actividades. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+<script src="JS/registroActividad.js"></script>
+<script src="/JS/login.js"></script>
+
+
+</body>
+</html>
+
+

@@ -1,0 +1,256 @@
+body{
+    background-image: url('/IMG/fondo2.jpg');
+    background-size: cover; 
+    background-position: center; 
+    background-attachment: fixed; 
+    background-repeat: no-repeat;
+    margin: 0;
+    height: 100%;
+    
+}
+.subtitulo{
+    margin-top: 20px;
+}
+
+#actividades-lista {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 0 15px;
+}
+
+.actividad {
+    border: 1px solid #ddd;
+    padding: 15px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+    position: relative;
+}
+
+.actividad:hover {
+    transform: scale(1.05);
+}
+
+.actividad h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #333;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.actividad p {
+    font-size: 1em;
+    margin: 5px 5px;
+    padding-bottom: 40px;
+    color: #666;
+}
+
+.actividad img.actividad-imagen {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    justify-content: center;
+}
+.MainDeActividades{
+    width: 100% ;
+    height: 100%;
+}
+.MainDeSubCategoria{
+    width: 100% ;
+    height: 100vh;
+    margin-bottom: 100px;
+}
+
+h2{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    margin-top: 30px;
+    padding-left: 10x0px;
+    color: rgb(254, 254, 255);
+}
+
+.Separador{
+    margin-top: 50px;
+}
+.actividad button{
+    background-color: #40b2f9;
+    color: #fffdfd;
+    font-size: 17px;
+    border: none;
+    border-radius: 5px;
+    height: 30px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    padding: 5px 10px;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+
+.actividad button:hover{
+    background-color: rgb(1, 5, 28);
+}
+
+#actividades-completas{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 15px;
+}
+.actividadesCompleta{
+    border: 1px solid #ddd;
+    padding: 15px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+    position: relative;
+}
+.actividadesCompleta:hover{
+    transform: scale(1.05);
+}
+.actividadesCompleta img.actividad-imagen {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    object-fit: cover;
+}
+.imagenContenedorAct{
+    width: 100%;
+    height: 200px;
+}
+
+.actividadesCompleta h3{
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #333;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.actividadesCompleta p{
+    font-size: 1em;
+    margin: 5px 5px;
+    padding-bottom: 40px;
+    color: #666;
+}
+.actividadesCompleta button{
+    background-color: #40b2f9;
+    color: #fffdfd;
+    font-size: 17px;
+    border: none;
+    border-radius: 5px;
+    height: 30px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    padding: 5px 10px;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+.actividadesCompleta button:hover{
+    background-color: #0056b3;
+}
+.actividadesCompleta:hover{
+    transform: scale(1.05);
+}
+
+.contenedor {
+    display: flex;
+    justify-content: center;
+}
+
+.buscador {
+    width: max-content;
+    display: flex;
+    padding: 14px;
+    border-radius: 16px;
+    background: #f6f6f6;
+    width: 600px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.75); 
+}
+
+.buscador-entrada {
+    font-size: 16px;
+    font-family: sans-serif;
+    color: #333333;
+    margin-left: 14px;
+    outline: none;
+    border: none;
+    background: none;
+    width: 300px;
+    flex: 1;
+}
+
+.buscador-entrada::placeholder, .buscador-icon {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+
+.contenedor-actiPorSubcatego{
+    height: 80vh;
+}
+
+footer {
+    
+    padding: 2px 0 !important;
+    
+}
+
+@media (max-width: 480px){
+    .buscador{
+        width: 350px;
+    }
+
+   
+    section{
+        height: auto;
+
+    }
+    .container-incripcion{
+        height: auto;
+    }
+    .header-cont{
+        margin-top: 20px;
+    }
+    
+
+    .MainDeSubCategoria{
+        height: 100%;
+    }
+
+    .contenedorSub-Categorias{
+        height: 320vh;
+        margin-bottom: 100px;
+    }
+
+}
+
+@media (max-width: 880px){
+    .buscador{
+        width: 350px;
+    }
+
+    .container-incripcion{
+        height: auto;
+    }
+    .header-cont{
+        margin-top: 20px;
+    }
+
+    #actividades-completas{
+        margin-bottom: 100px;
+    }
+
+    .MainDeSubCategoria{
+        height: 100%;
+        margin-top: 20px;
+    }
+
+    footer{
+        padding: 4px 0 !important;
+        position:fixed !important;
+        
+        
+    }
+}

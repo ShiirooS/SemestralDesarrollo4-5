@@ -1,0 +1,360 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f9f9f9;
+}
+
+h2 {
+    margin-top: 20px;
+    color: #2e2f32;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #061037;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 89%;
+    width: 250px;
+    background-color: #ebecf3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    z-index: 1000;
+}
+
+header .logo img {
+    width: 80%;
+    max-width: 150px;
+    height: auto;
+}
+
+header nav {
+    margin-top: 30px;
+    width: 100%;
+    text-align: center;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+header nav ul li a {
+    display: block;
+    color: rgb(41, 41, 41);
+    text-decoration: none;
+    padding: 15px 20px;
+    font-size: 16px;
+    text-align: left;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header nav ul li a:hover {
+    background-color: #1E2D4A;
+    color: white;
+}
+
+#logoutButton {
+    margin-top: auto;
+    margin-bottom: 50px;
+    background-color: #40b2f9;
+    color: white;
+    border: none;
+    padding: 10px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 5px;
+}
+
+#logoutButton:hover {
+    background-color: #061037;
+}
+
+main {
+    margin-left: 250px;
+    padding: 20px;
+    height: 84vh;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.contenedor {
+    
+    top: 60px;
+    background-color: #ffffff;
+    z-index: 999;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border-radius: 18px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#actividades-completas-admin {
+    margin-top: 20px;
+    max-height: calc(100vh - 160px);
+    overflow-y: auto;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.buscadorr {
+    display: flex;
+    align-items: center;
+    padding: 6px;
+    border-radius: 5px;
+    background: #fbfbfb;
+    width: 360px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.75);
+    margin-top: 39px;
+}
+
+.buscador-entrada {
+    font-size: 16px;
+    font-family: sans-serif;
+    color: #333333;
+    margin-left: 10px;
+    outline: none;
+    border: none;
+    background: none;
+    width: 100%;
+}
+
+.buscador-entrada::placeholder, .buscador-icon {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+button, .edit-icon {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    transition: transform 0.3s ease;
+}
+
+button:hover, .edit-icon:hover {
+    transform: scale(1.1);
+}
+
+#createNewButton {
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: #40b2f9;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 39px;
+    margin-right: 10px;
+}
+
+#createNewButton:hover {
+    background-color: #0056b3;
+}
+
+#eliminar-actividades {
+    background-color: #ff4d4d;
+    color: white;
+    font-size: 12px;
+    padding: 1px 3px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#eliminar-actividades:hover {
+    background-color: #ff3333;
+    transform: scale(1.05);
+}
+
+#eliminar-actividades:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(255, 0, 0, 0.5);
+}
+
+.actividadesCompleta, .propuestasCompleta {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 50px;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 25px 30px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    gap: 5px;
+    transition: transform 0.3s ease;
+    
+}
+
+.actividadesCompleta:hover, .propuestasCompleta:hover {
+    transform: scale(1.01);
+}
+
+.actividadesCompleta h3, .propuestasCompleta h3 {
+    font-size: 16px;
+    color: #333;
+    margin: 0;
+}
+
+.actividadesCompleta p, .propuestasCompleta p {
+    font-size: 14px;
+    color: #666;
+    margin: 5px 0;
+    
+}
+
+.Dtalles{
+    font-size: 12px;
+    color: #ffffff;
+    text-decoration: underline;
+    background: #40b2f9;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 10px 20px;
+    transition: background-color 0.3s;
+    height: 30px;
+    width: 100px;
+    margin-left: 50px;
+}
+
+.catsub {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+select {
+    width: 200px;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: white;
+}
+
+footer {
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    background-color: #2e2f32;
+    color: white;
+    padding: 5px 0;
+    text-align: center;
+    font-size: 14px;
+    margin-top: auto;
+}
+
+
+
+
+@media (max-width: 880px) {
+    body {
+        flex-direction: column;
+        height: auto;
+    }
+    h2{
+        margin-top: 10px;
+    }
+
+
+    header {
+        position: relative;
+        height: auto;
+        width: 100%;
+        flex-direction: row;
+        padding-top: 10px;
+    }
+
+    header .logo img {
+        width: 50%;
+        display: flex;
+        align-items: center;
+    }
+
+    header nav {
+        margin-top: 0;
+    }
+
+    header nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    header nav ul li a {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+
+    main {
+        margin-left: 0;
+        padding: 15px;
+    }
+
+    .contenedor {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .buscadorr {
+        width: 100%;
+    }
+
+    #createNewButton {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .actividadesCompleta, .propuestasCompleta {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    #logoutButton{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        flex-direction: column;
+    }
+
+    header .logo img {
+        width: 70%;
+        margin-left: 28px;
+    }
+
+    .actividadesCompleta, .propuestasCompleta {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .Dtalles {
+        width: 90px;
+    }
+
+    select {
+        width: 100%;
+    }
+}

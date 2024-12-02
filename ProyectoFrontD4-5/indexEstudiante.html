@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestor de Actividades</title>
+    <link rel="stylesheet" href="/CSS/inicio.css">
+    <link rel="stylesheet" href="/CSS/calendario.css">
+    <link rel="stylesheet" href="CSS/navbar.css">
+    
+</head>
+<body>
+    <header>
+        <div class="logo"> 
+             <img src="/IMG/logo.png" alt="Logo del sitio" style="font-size: small;"> 
+        </div>
+        <div class="navbar">
+            <nav>
+                <ul>
+                    <li><a href="/indexEstudiante.html">Inicio</a></li>
+                    <li><a href="/actividades.html">Actividades</a></li>
+                    <li><a href="registro.html">Registro de Actividades</a></li>
+                    <li><a href="propuesta.html">Actividades Propuestas</a></li>
+                    <button id="logoutButton">Cerrar Sesión</button>
+                    
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+    <main>
+        <section class="fondo-img">
+            <img src="/IMG/fondo.jpg" alt="Imagen de fondo">
+        </section>
+
+        <section id="categorias">
+        
+        </section>
+
+        <section id="subcategorias" style="display: none;">
+            <div class="subcategorias-contenedor">
+                <button class="scroll-btn" id="scroll-left">&#9664;</button>
+                <div id="subcategorias-lista" class="subcategorias-lista"></div>
+                <button class="scroll-btn" id="scroll-right">&#9654;</button>
+            </div>
+        </section>
+
+    
+
+        <div class="Calenda-Estadist">
+
+            <section id="calendario">
+                <div class="calendar dark">  
+                    <div class="calendar-header">
+                        <span class="month-picker" id="month-picker">February</span>
+                        <div class="year-picker">
+                            <span class="year-change" id="prev-year">&lt;</span>
+                            <span id="year">2021</span>
+                            <span class="year-change" id="next-year">&gt;</span>
+                        </div>
+                    </div>
+                    <div class="calendar-body">
+                        <div class="calendar-week-day">
+                            <div>Lun</div>
+                            <div>Mar</div>
+                            <div>Mie</div>
+                            <div>Jue</div>
+                            <div>Vie</div>
+                            <div>Sab</div>
+                            <div>Dom</div>
+                        </div>
+                        <div class="calendar-days"></div>
+                    </div>
+                    <div class="month-list"></div>
+                </div>
+            </section>
+            <div class="video">
+                <iframe src="https://www.youtube.com/embed/3asJIJqy8rE?si=zx5t74UsxGWux5X8" allowfullscreen></iframe>
+            </div>
+            <section class="estadisticas">
+                <h2>Actividad</h2>
+                <div class="item">
+                    <span>Actividades inscritas</span>
+                    <span class="valor"></span> 
+                </div>
+                <div class="item">
+                    <span>Actividades Organizadas</span>
+                    <span class="valor"></span>
+                </div>
+                <div class="item">
+                    <span>Actividades en Espera</span>
+                    <span class="valor"></span>
+                </div>
+                <div class="item">
+                    <span>Actividades Aceptadas</span>
+                    <span class="valor"></span>
+                </div>
+                <div class="item">
+                    <span>Actividades Rechazadas</span>
+                    <span class="valor"></span>
+                </div>
+            </section>
+
+        </div>
+        
+    </main>
+
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Gestor de Actividades. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="JS/calendario.js"></script>
+    <script src="/JS/mostrarCategorias.js"></script>
+    <script src="/JS/login.js"></script>
+    <script src="/JS/estadisticas.js"></script>
+</body>
+</html>

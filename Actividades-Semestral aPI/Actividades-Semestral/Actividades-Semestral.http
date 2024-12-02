@@ -1,0 +1,6 @@
+@Actividades_Semestral_HostAddress = http://localhost:5041
+
+GET {{Actividades_Semestral_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

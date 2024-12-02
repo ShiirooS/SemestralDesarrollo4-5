@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Actividad</title>
+    <link rel="stylesheet" href="/CSS/navDetailsActAdmin.css">
+    <link rel="stylesheet" href="CSS/editarActividad.css">
+    
+</head>
+<body>
+    <div class="contenedoreditaractividad">
+
+        <header>
+            <div class="logo"> 
+                 <img src="/IMG/logo-utp.png" alt="Logo del sitio"> 
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="/indexAdministrativo.html">Inicio</a></li>
+                    <li><a href="verPropuestas.html">Ver Propuesta</a></li>
+                </ul>
+            </nav>
+            <button id="logoutButton">Cerrar Sesión</button>
+        </header>
+    
+        <div class="main-EditActivity">
+            <h2>Editar Actividad</h2>
+            <form id="editarActividadForm">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required />
+    
+                <label for="descripcion">Descripción:</label>
+                <textarea id="descripcion" name="descripcion" required></textarea>
+    
+                <label for="fecha">Fecha:</label>
+                <input type="date" id="fecha" name="fecha" required />
+    
+                <label for="hora">Hora:</label>
+                <input type="time" id="hora" name="hora" required />
+    
+                <label for="cuposMaximos">Cupos Máximos:</label>
+                <input type="number" id="cuposMaximos" name="cuposMaximos" required />
+    
+                <label for="costo">Costo:</label>
+                <input type="number" id="costo" name="costo" required step="0.01" />
+    
+                <label for="requisitos">Requisitos:</label>
+                <textarea id="requisitos" name="requisitos"></textarea>
+    
+                <label for="estado">Estado:</label>
+                <select id="estado" name="estado" required>
+                    <option value="">Seleccione un estado</option>
+                    
+                </select>
+    
+                <button type="submit">Guardar Cambios</button>
+            </form>
+        </div>
+
+    </div>
+    
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Gestor de Actividades. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    <script src="/JS/editarActividad.js"></script>
+</body>
+</html>

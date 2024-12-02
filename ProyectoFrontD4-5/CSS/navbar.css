@@ -1,0 +1,201 @@
+header {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
+    background-color: rgb(255, 255, 255);
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    background-image: url('/IMG/fondo2.jpg');
+    flex-wrap: wrap;
+}
+
+.logo {
+    margin-top: -100px;
+    height: 200px;
+    width: 100px;
+}
+
+.logo img {
+    width: 350px;
+    height: 290px;
+    border-radius: 50%;
+}
+
+.navbar {
+    margin: 30px;
+}
+
+.navbar nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.navbar nav ul li {
+    margin: 0 17px;
+}
+
+.navbar nav ul li a {
+    color: #6c6c6c;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 700;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar nav ul li a:hover {
+    color: #40b2f9;
+}
+
+#logoutButton {
+    background-color: #40b2f9;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    
+}
+
+#logoutButton:hover {
+    background-color: #2da6f1;
+}
+
+
+
+footer {
+    background-color: #05113b;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: auto;
+}
+
+
+
+@media screen and (max-width: 828px) {
+
+    body{
+        height: auto;
+        width: auto;
+    }
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+        width: auto;
+
+    }
+
+    .logo img {
+        width: 150px;
+        height: 190px;
+        border-radius: 50%;
+    }
+
+    .logo {
+        margin-top: -60px;
+        width: auto;
+        height: auto;
+    }
+
+    .navbar {
+        display: grid;
+        width: 100%;
+        height: 100%;
+        padding: 5px;        
+        display: grid;
+        margin: 0;
+
+    }
+
+    .navbar nav ul {
+        flex-direction: row; 
+        width: 100%;
+        padding: 0;
+        gap: 20px;
+        font-size: 10px;
+        justify-content: space-evenly;
+    }
+
+    .navbar nav ul li {
+        margin: 10px 10px;
+        
+    }
+
+    #logoutButton {
+        align-self: flex-end;
+        margin-bottom: 6px;
+    }
+}
+
+
+
+@media (max-width: 480px){
+
+    body{
+        height: 430px;
+        width: auto;
+    }
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+        width: auto;
+
+    }
+
+    .logo img {
+        width: 150px;
+        height: 190px;
+        border-radius: 50%;
+    }
+
+    .logo {
+        margin-top: -60px;
+        width: auto;
+        height: auto;
+    }
+
+    .navbar {
+        display: grid;
+        width: 100%;
+        height: 100%;
+        padding: 5px;        
+        display: grid;
+        margin: 0;
+
+    }
+
+    .navbar nav ul {
+        flex-direction: row; 
+        width: 100%;
+        padding: 0;
+        gap: 5px;
+        font-size: 10px;
+    }
+
+    .navbar nav ul li {
+        margin: 10px 10px;
+        
+    }
+
+    #logoutButton {
+        align-self: flex-end;
+        margin-bottom: 6px;
+    }
+    
+    footer{
+        position: static;
+    }
+
+
+}
